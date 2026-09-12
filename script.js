@@ -16,15 +16,12 @@ function unlockWebsite() {
 
   const password = document.getElementById("passwordInput").value;
 
-  const correctPassword = "yourpassword";
+  const correctPassword = "2019";
 
   if (password === correctPassword) {
-
-    document.getElementById("passwordScreen").style.display = "none";
-
+document.getElementById("passwordScreen").style.display = "none";
   } else {
-
-    document.getElementById("wrongPassword").innerText =
-      "Oops... that's not the secret password 💜";
+document.getElementById("wrongPassword").innerText =
+      "Go back to the beginning of our story… 💜";
   }
 }
