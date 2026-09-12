@@ -162,3 +162,125 @@ button:hover {
         bottom: 110%;
     }
 }
+/* =========================
+   SECRET PASSWORD SCREEN
+   ========================= */
+
+.password-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(12, 5, 25, 0.82);
+  backdrop-filter: blur(12px);
+
+  padding: 20px;
+}
+
+.password-box {
+  width: min(90%, 480px);
+  padding: 45px 30px;
+
+  text-align: center;
+
+  background: rgba(45, 20, 70, 0.88);
+
+  border: 1px solid rgba(210, 170, 255, 0.6);
+  border-radius: 28px;
+
+  box-shadow:
+    0 0 35px rgba(180, 120, 255, 0.35),
+    inset 0 0 25px rgba(190, 140, 255, 0.08);
+
+  color: white;
+}
+
+.lock {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.password-box h1 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.password-box p {
+  color: #e5d4f7;
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+
+  margin: 28px 0 20px;
+
+  padding: 5px 18px;
+
+  border: 1px solid #b98bea;
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.password-input span {
+  font-size: 18px;
+}
+
+.password-input input {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+  font-size: 16px;
+}
+
+.password-input input::placeholder {
+  color: #d8c3eb;
+}
+
+.password-box button {
+  border: none;
+
+  padding: 14px 38px;
+
+  border-radius: 50px;
+
+  background: #cda6ff;
+  color: #35164f;
+
+  font-size: 17px;
+  cursor: pointer;
+
+  box-shadow: 0 0 20px rgba(205, 166, 255, 0.45);
+}
+
+.password-box button:active {
+  transform: scale(0.96);
+}
+
+.password-box small {
+  display: block;
+  margin-top: 25px;
+
+  color: #d8baf5;
+  font-size: 13px;
+}
+
+#wrongPassword {
+  margin-top: 12px;
+  color: #ffb8d8;
+  font-size: 14px;
+}
